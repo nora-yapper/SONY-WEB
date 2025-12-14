@@ -30,12 +30,12 @@ export default function AthletesPage() {
               Confidence. For athletes with intellectual disabilities, Special Olympics New York provides a training
               ground where those qualities are refined and given room to grow.
             </p>
-            <p className="text-lg text-gray-300 leading-relaxed">
+            <p className="text-lg text-gray-700 leading-relaxed">
               From the Young Athletes program for all children up to age 7, to Unified Sports that bring together
               athletes of all abilities, to credible competitions, Special Olympics New York athletes have the
               opportunity to compete on a level playing field.
             </p>
-            <p className="text-lg text-gray-300 leading-relaxed">
+            <p className="text-lg text-gray-700 leading-relaxed">
               Along the way, athletes develop skills that accompany them through every part of life, helping them set an
               example of what people with intellectual disabilities can really do.
             </p>
@@ -67,7 +67,7 @@ export default function AthletesPage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white/20 text-white hover:bg-white/10 bg-transparent"
+                className="border-gray-300 text-gray-700 hover:bg-gray-100 bg-transparent"
               >
                 Find a Training Club
               </Button>

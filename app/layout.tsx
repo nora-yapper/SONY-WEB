@@ -1,7 +1,7 @@
 import type React from "react";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Changa } from "next/font/google";
 import Script from "next/script";
 import { Suspense } from "react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -10,6 +10,7 @@ import { VerticalSidebarNav } from "@/components/vertical-sidebar-nav";
 import { SectionAnnouncement } from "@/components/section-announcement";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
+export const changa = Changa({ subsets: ["latin"], display: "swap", variable: "--font-changa" });
 
 export const metadata: Metadata = {
   title: "Special Olympics New York | Authentic Champions",
@@ -26,22 +27,13 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={inter.className}
+      className={`${inter.className} ${changa.variable}`}
       style={{ scrollBehavior: "smooth" }}
     >
       <head>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"
-        />
-
-        {/* Font Preload */}
-        <link
-          rel="preload"
-          href="/fonts/Inter.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
         />
 
         {/* Dynamic Favicon Script */}

@@ -6,19 +6,18 @@ export function Hero() {
   return (
     <section className="relative isolate overflow-hidden bg-white">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col items-center justify-center py-20 sm:py-32">
-          <div className="mb-6 flex items-center gap-2">
-            <p className="text-sm uppercase tracking-[0.25em] text-primary/80">
-              Authentic Champions
-            </p>
-          </div>
+        <div className="flex flex-col items-center justify-center pt-4 pb-20 sm:pt-6 sm:pb-32">
 
-          <h1 className="mt-3 text-center text-5xl font-extrabold tracking-tight sm:text-6xl md:text-7xl text-balance">
-            <span className="block text-gray-800">DISCOVER AND UNLEASH</span>
-            <span className="block text-primary drop-shadow-[0_0_20px_rgba(227,30,36,0.35)]">
-              THE CHAMPION WITHIN
-            </span>
-          </h1>
+          <div className="w-full">
+            <Image
+              src="/images/landing-visual.png"
+              alt="Discover and Unleash the Champion Within"
+              width={1200}
+              height={400}
+              className="w-full h-auto"
+              priority
+            />
+          </div>
 
           <p className="mt-8 max-w-3xl text-center text-xl text-gray-700 text-pretty leading-relaxed">
             Special Olympics New York provides inclusive opportunities for

@@ -290,9 +290,9 @@ export function VerticalSidebarNav() {
           className="bg-white/90 backdrop-blur-sm border border-gray-200 hover:bg-gray-100"
         >
           {mobileMenuOpen ? (
-            <X className="h-5 w-5" />
+            <X className="h-5 w-5 text-black" />
           ) : (
-            <Menu className="h-5 w-5" />
+            <Menu className="h-5 w-5 text-black" />
           )}
           <span className="sr-only">Toggle menu</span>
         </Button>
