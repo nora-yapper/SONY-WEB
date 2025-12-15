@@ -72,7 +72,7 @@ export default function BecomeACoachPage() {
               >
                 <Button
                   size="lg"
-                  className="bg-primary hover:bg-primary/90 text-white"
+                  className="bg-primary hover:bg-gray-200 hover:text-red-600 text-white"
                 >
                   Inquire Here
                 </Button>
@@ -81,7 +81,7 @@ export default function BecomeACoachPage() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-red-500 text-red-600 hover:bg-red-50 bg-transparent"
+                  className="border-red-500 text-red-600 hover:bg-red-600/20 hover:text-red-600"
                 >
                   Meet the Coach of the Year
                 </Button>
