@@ -8,9 +8,14 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import { VerticalSidebarNav } from "@/components/vertical-sidebar-nav";
 import { SectionAnnouncement } from "@/components/section-announcement";
+import { Footer } from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
-export const changa = Changa({ subsets: ["latin"], display: "swap", variable: "--font-changa" });
+export const changa = Changa({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-changa",
+});
 
 export const metadata: Metadata = {
   title: "Special Olympics New York | Authentic Champions",
@@ -85,7 +90,10 @@ export default function RootLayout({
         <SectionAnnouncement />
 
         <Suspense fallback={null}>
-          <div className="relative z-10 lg:ml-64">{children}</div>
+          <div className="relative z-10 lg:ml-64">
+            {children}
+            <Footer />
+          </div>
         </Suspense>
 
         {/* Vercel Speed Insights and Analytics components */}
