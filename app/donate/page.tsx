@@ -7,19 +7,25 @@ export default function DonatePage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-white/40 to-white/20 z-10" />
-        <Image
-          src="/placeholder.svg?height=800&width=1600"
-          alt="Show Your Support"
-          fill
-          className="object-cover"
-          priority
-        />
-        <div className="relative z-20 container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 text-balance">
-            Show Your Support
-          </h1>
+      <section className="relative isolate overflow-hidden bg-white">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col items-center justify-center pt-4 pb-0 sm:pt-2 sm:pb-6">
+            <div className="w-full max-w-4xl mx-auto">
+              <Image
+                src="/images/support.png"
+                alt="Show your Support"
+                width={1200}
+                height={400}
+                className="w-full h-auto rounded-xl"
+                priority
+              />
+            </div>
+            <div className="relative z-20 container mx-auto px-4 text-center mt-8">
+              <h1 className="text-5xl md:text-7xl font-bold text-red-600 mb-6 text-balance font-[family-name:var(--font-changa)] ">
+                Show your Support
+              </h1>
+            </div>
+          </div>
         </div>
       </section>
 
