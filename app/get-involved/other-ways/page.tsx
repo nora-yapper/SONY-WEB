@@ -71,7 +71,7 @@ export default function OtherWaysPage() {
               <Button
                 asChild
                 variant="outline"
-                className="rounded-full border-2 border-red-300 px-8 py-4 text-lg font-semibold text-red-700 bg-white hover:bg-red-50 hover:shadow-lg hover:scale-[1.02] transition-all"
+                className="rounded-full border-2 border-red-300 px-8 py-4 text-lg font-semibold text-red-700 bg-white hover:bg-red-50 hover:text-red-600 hover:shadow-lg hover:scale-[1.02] transition-all"
               >
                 <Link
                   href="https://forms.gle/G15QexfUJyNiUaLX6"
