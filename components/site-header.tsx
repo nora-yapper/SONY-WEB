@@ -1,9 +1,19 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Menu, Heart, Users, Trophy, MapPin, ChevronDown, GraduationCap, Handshake, UsersRound } from "lucide-react"
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import {
+  Menu,
+  Heart,
+  Users,
+  Trophy,
+  MapPin,
+  ChevronDown,
+  GraduationCap,
+  Handshake,
+  UsersRound,
+} from "lucide-react";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -11,14 +21,18 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu"
-import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible"
-import { useState } from "react"
+} from "@/components/ui/navigation-menu";
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "@/components/ui/collapsible";
+import { useState } from "react";
 
 export function SiteHeader() {
-  const [whoWeAreOpen, setWhoWeAreOpen] = useState(false)
-  const [getInvolvedOpen, setGetInvolvedOpen] = useState(false)
-  const [programsOpen, setProgramsOpen] = useState(false)
+  const [whoWeAreOpen, setWhoWeAreOpen] = useState(false);
+  const [getInvolvedOpen, setGetInvolvedOpen] = useState(false);
+  const [programsOpen, setProgramsOpen] = useState(false);
 
   const whoWeAreLinks = [
     {
@@ -57,7 +71,7 @@ export function SiteHeader() {
       icon: Users,
       description: "Meet our leadership team",
     },
-  ]
+  ];
 
   const getInvolvedLinks = [
     {
@@ -78,7 +92,13 @@ export function SiteHeader() {
       icon: Users,
       description: "Coach our athletes",
     },
-  ]
+    {
+      href: "/get-involved/other-ways",
+      label: "Other Ways",
+      icon: UsersRound,
+      description: "Additional ways to get involved",
+    },
+  ];
 
   const programsLinks = [
     {
@@ -105,9 +125,9 @@ export function SiteHeader() {
       icon: GraduationCap,
       description: "School programs",
     },
-  ]
+  ];
 
-  const links = [{ href: "/regions", label: "Regions", icon: MapPin }]
+  const links = [{ href: "/regions", label: "Regions", icon: MapPin }];
 
   return (
     <header className="sticky top-0 z-50 p-4">
@@ -118,7 +138,9 @@ export function SiteHeader() {
             <div className="h-8 w-8 rounded-full bg-primary flex items-center justify-center">
               <Trophy className="h-5 w-5 text-white" />
             </div>
-            <span className="font-bold tracking-tight text-white">Special Olympics NY</span>
+            <span className="font-bold tracking-tight text-white">
+              Special Olympics NY
+            </span>
           </Link>
 
           {/* Desktop Nav */}
@@ -152,7 +174,9 @@ export function SiteHeader() {
                                 <div className="text-sm font-medium text-white group-hover:text-primary">
                                   {link.label}
                                 </div>
-                                <p className="text-xs text-gray-400 mt-0.5">{link.description}</p>
+                                <p className="text-xs text-gray-400 mt-0.5">
+                                  {link.description}
+                                </p>
                               </div>
                             </Link>
                           </NavigationMenuLink>
@@ -189,7 +213,9 @@ export function SiteHeader() {
                                 <div className="text-sm font-medium text-white group-hover:text-primary">
                                   {link.label}
                                 </div>
-                                <p className="text-xs text-gray-400 mt-0.5">{link.description}</p>
+                                <p className="text-xs text-gray-400 mt-0.5">
+                                  {link.description}
+                                </p>
                               </div>
                             </Link>
                           </NavigationMenuLink>
@@ -226,7 +252,9 @@ export function SiteHeader() {
                                 <div className="text-sm font-medium text-white group-hover:text-primary">
                                   {link.label}
                                 </div>
-                                <p className="text-xs text-gray-400 mt-0.5">{link.description}</p>
+                                <p className="text-xs text-gray-400 mt-0.5">
+                                  {link.description}
+                                </p>
                               </div>
                             </Link>
                           </NavigationMenuLink>
@@ -239,7 +267,11 @@ export function SiteHeader() {
             </NavigationMenu>
 
             {links.map((l) => (
-              <Link key={l.href} href={l.href} className="hover:text-primary transition-colors">
+              <Link
+                key={l.href}
+                href={l.href}
+                className="hover:text-primary transition-colors"
+              >
                 {l.label}
               </Link>
             ))}
@@ -270,19 +302,27 @@ export function SiteHeader() {
                   <span className="sr-only">Open menu</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="liquid-glass border-gray-800 p-0 w-64 flex flex-col">
+              <SheetContent
+                side="right"
+                className="liquid-glass border-gray-800 p-0 w-64 flex flex-col"
+              >
                 {/* Brand Header */}
                 <div className="flex items-center gap-2 px-4 py-4 border-b border-gray-800">
                   <div className="h-8 w-8 rounded-full bg-primary flex items-center justify-center">
                     <Trophy className="h-5 w-5 text-white" />
                   </div>
-                  <span className="font-bold tracking-tight text-white text-base">Special Olympics NY</span>
+                  <span className="font-bold tracking-tight text-white text-base">
+                    Special Olympics NY
+                  </span>
                 </div>
 
                 {/* Nav Links */}
                 <nav className="flex flex-col gap-1 mt-2 text-gray-200">
                   {/* Who We Are Collapsible */}
-                  <Collapsible open={whoWeAreOpen} onOpenChange={setWhoWeAreOpen}>
+                  <Collapsible
+                    open={whoWeAreOpen}
+                    onOpenChange={setWhoWeAreOpen}
+                  >
                     <CollapsibleTrigger className="flex items-center justify-between w-full px-4 py-3 hover:bg-gray-900 hover:text-primary transition-colors">
                       <div className="flex items-center gap-3">
                         <span className="inline-flex items-center justify-center w-5 h-5 text-gray-400">
@@ -291,7 +331,9 @@ export function SiteHeader() {
                         <span className="text-sm">Who We Are</span>
                       </div>
                       <ChevronDown
-                        className={`h-4 w-4 text-gray-400 transition-transform ${whoWeAreOpen ? "rotate-180" : ""}`}
+                        className={`h-4 w-4 text-gray-400 transition-transform ${
+                          whoWeAreOpen ? "rotate-180" : ""
+                        }`}
                       />
                     </CollapsibleTrigger>
                     <CollapsibleContent>
@@ -311,7 +353,10 @@ export function SiteHeader() {
                   </Collapsible>
 
                   {/* Get Involved Collapsible */}
-                  <Collapsible open={getInvolvedOpen} onOpenChange={setGetInvolvedOpen}>
+                  <Collapsible
+                    open={getInvolvedOpen}
+                    onOpenChange={setGetInvolvedOpen}
+                  >
                     <CollapsibleTrigger className="flex items-center justify-between w-full px-4 py-3 hover:bg-gray-900 hover:text-primary transition-colors">
                       <div className="flex items-center gap-3">
                         <span className="inline-flex items-center justify-center w-5 h-5 text-gray-400">
@@ -320,7 +365,9 @@ export function SiteHeader() {
                         <span className="text-sm">Get Involved</span>
                       </div>
                       <ChevronDown
-                        className={`h-4 w-4 text-gray-400 transition-transform ${getInvolvedOpen ? "rotate-180" : ""}`}
+                        className={`h-4 w-4 text-gray-400 transition-transform ${
+                          getInvolvedOpen ? "rotate-180" : ""
+                        }`}
                       />
                     </CollapsibleTrigger>
                     <CollapsibleContent>
@@ -340,7 +387,10 @@ export function SiteHeader() {
                   </Collapsible>
 
                   {/* Programs Collapsible */}
-                  <Collapsible open={programsOpen} onOpenChange={setProgramsOpen}>
+                  <Collapsible
+                    open={programsOpen}
+                    onOpenChange={setProgramsOpen}
+                  >
                     <CollapsibleTrigger className="flex items-center justify-between w-full px-4 py-3 hover:bg-gray-900 hover:text-primary transition-colors">
                       <div className="flex items-center gap-3">
                         <span className="inline-flex items-center justify-center w-5 h-5 text-gray-400">
@@ -349,7 +399,9 @@ export function SiteHeader() {
                         <span className="text-sm">Programs</span>
                       </div>
                       <ChevronDown
-                        className={`h-4 w-4 text-gray-400 transition-transform ${programsOpen ? "rotate-180" : ""}`}
+                        className={`h-4 w-4 text-gray-400 transition-transform ${
+                          programsOpen ? "rotate-180" : ""
+                        }`}
                       />
                     </CollapsibleTrigger>
                     <CollapsibleContent>
@@ -398,5 +450,5 @@ export function SiteHeader() {
         </div>
       </div>
     </header>
-  )
+  );
 }

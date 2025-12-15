@@ -27,16 +27,16 @@ export function WaysToGetInvolvedSection() {
     {
       title: "Other Ways to Get Involved",
       image: "/images/home-page/other-ways.png",
-      href: "/get-involved",
+      href: "/get-involved/other-ways",
       description:
         "Sponsor an event, host a fundraiser, become a Unified partner, join our committees, careers, and help us building training clubs.",
     },
   ];
 
   return (
-    <section className="relative py-16 sm:py-24 bg-gray-50 px-4 sm:px-8 md:px-16 lg:px-30">
+    <section className="relative py-24 bg-gray-50 px-30">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-8 sm:mb-12 uppercase tracking-tight">
+        <h2 className="text-4xl md:text-5xl font-bold text-black mb-12 uppercase tracking-tight">
           Ways to Get Involved
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -44,7 +44,7 @@ export function WaysToGetInvolvedSection() {
             return (
               <Link key={way.title} href={way.href}>
                 <Card className="overflow-hidden !bg-gray-100 hover:!bg-gray-200 hover:scale-105 transition-all cursor-pointer h-full border-none rounded-lg pt-0">
-                  <div className="h-[200px] sm:h-[250px] md:h-[300px] relative overflow-hidden rounded-t-lg">
+                  <div className="h-[300px] relative overflow-hidden rounded-t-lg">
                     <Image
                       src={way.image}
                       alt={way.title}

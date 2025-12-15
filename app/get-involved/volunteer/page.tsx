@@ -27,7 +27,7 @@ export default function VolunteerPage() {
             </div>
             <div className="relative z-20 container mx-auto px-4 text-center mt-8">
               <h1 className="text-5xl md:text-7xl font-bold text-red-600 mb-6 text-balance font-[family-name:var(--font-changa)] ">
-                OPPORTUNITIES FOR EVERYONE
+                Opportunities for Everyone
               </h1>
             </div>
 

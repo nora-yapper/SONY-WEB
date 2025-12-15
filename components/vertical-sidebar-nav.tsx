@@ -56,7 +56,7 @@ const navItems: NavItem[] = [
       { label: "Volunteers", href: "/get-involved/volunteer" },
       { label: "Coaches", href: "/get-involved/become-a-coach" },
       { label: "Athletes", href: "/competition/become-an-athlete" },
-      { label: "Other Ways", href: "#" }, // Missing page
+      { label: "Other Ways", href: "/get-involved/other-ways" }, // Missing page
     ],
   },
   {
