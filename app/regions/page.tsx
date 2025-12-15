@@ -71,7 +71,7 @@ export default function RegionsPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-white/40 to-white/20 z-10" />
         <div className="relative z-20 container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-7xl font-bold text-red-600 mb-6 text-balance font-[family-name:var(--font-changa)] ">
-            Find Your Region
+            FIND YOUR REGION
           </h1>
         </div>
       </section>
