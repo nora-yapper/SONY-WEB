@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -58,41 +57,35 @@ export default function BecomeAnAthletePage() {
             </h2>
 
             <div className="grid md:grid-cols-3 gap-6">
-              <Card className="bg-white border-gray-200 shadow-sm hover:shadow-md hover:border-primary/50 transition-all duration-300">
-                <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
-                    <span className="text-3xl font-bold text-white">1</span>
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">Choose your sport</h3>
-                  <Link href="/competition/sports-offered">
-                    <Button className="bg-primary hover:bg-primary/90 text-white">View Sports</Button>
-                  </Link>
-                </CardContent>
-              </Card>
+              <div className="bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md hover:border-primary/50 transition-all duration-300 p-8 text-center">
+                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                  <span className="text-3xl font-bold text-white">1</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Choose your sport</h3>
+                <Link href="/competition/sports-offered">
+                  <Button className="bg-primary hover:bg-primary/90 text-white">View Sports</Button>
+                </Link>
+              </div>
 
-              <Card className="bg-white border-gray-200 shadow-sm hover:shadow-md hover:border-primary/50 transition-all duration-300">
-                <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
-                    <span className="text-3xl font-bold text-white">2</span>
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">Find a Training Club</h3>
-                  <Link href="https://specialolympicsnynearyou.org/" target="_blank">
-                    <Button className="bg-primary hover:bg-primary/90 text-white">Find a Club</Button>
-                  </Link>
-                </CardContent>
-              </Card>
+              <div className="bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md hover:border-primary/50 transition-all duration-300 p-8 text-center">
+                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                  <span className="text-3xl font-bold text-white">2</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Find a Training Club</h3>
+                <Link href="https://specialolympicsnynearyou.org/" target="_blank">
+                  <Button className="bg-primary hover:bg-primary/90 text-white">Find a Club</Button>
+                </Link>
+              </div>
 
-              <Card className="bg-white border-gray-200 shadow-sm hover:shadow-md hover:border-primary/50 transition-all duration-300">
-                <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
-                    <span className="text-3xl font-bold text-white">3</span>
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">Contact Us</h3>
-                  <Link href="https://specialolympicsnynearyou.org/inquire-about-us/" target="_blank">
-                    <Button className="bg-primary hover:bg-primary/90 text-white">Get Started</Button>
-                  </Link>
-                </CardContent>
-              </Card>
+              <div className="bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md hover:border-primary/50 transition-all duration-300 p-8 text-center">
+                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                  <span className="text-3xl font-bold text-white">3</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Contact Us</h3>
+                <Link href="https://specialolympicsnynearyou.org/inquire-about-us/" target="_blank">
+                  <Button className="bg-primary hover:bg-primary/90 text-white">Get Started</Button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -101,23 +94,21 @@ export default function BecomeAnAthletePage() {
       {/* Testimonial */}
       <section className="py-20 container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <Card className="bg-white border-gray-200 shadow-sm">
-            <CardContent className="p-8 md:p-12">
-              <div className="grid md:grid-cols-2 gap-8 items-center">
-                <div className="aspect-video relative rounded-lg overflow-hidden bg-gray-100">
-                  <Image src="/placeholder.svg?height=400&width=600" alt="Cori Piels" fill className="object-cover" />
-                </div>
-                <div>
-                  <blockquote className="text-xl text-gray-700 italic leading-relaxed mb-6">
-                    "I proved my mom wrong. She cries every time she watches me skate and it makes me proud."
-                  </blockquote>
-                  <p className="text-gray-900 font-bold">– Cori Piels</p>
-                  <p className="text-gray-600">Special Olympics New York</p>
-                  <p className="text-gray-600">Figure Skating athlete</p>
-                </div>
+          <div className="bg-white border border-gray-200 rounded-xl shadow-sm p-8 md:p-12">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div className="aspect-video relative rounded-lg overflow-hidden bg-gray-100">
+                <Image src="/placeholder.svg?height=400&width=600" alt="Cori Piels" fill className="object-cover" />
               </div>
-            </CardContent>
-          </Card>
+              <div>
+                <blockquote className="text-xl text-gray-700 italic leading-relaxed mb-6">
+                  "I proved my mom wrong. She cries every time she watches me skate and it makes me proud."
+                </blockquote>
+                <p className="text-gray-900 font-bold">– Cori Piels</p>
+                <p className="text-gray-600">Special Olympics New York</p>
+                <p className="text-gray-600">Figure Skating athlete</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -126,43 +117,41 @@ export default function BecomeAnAthletePage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Eligibility Requirements</h2>
-            <Card className="bg-white border-gray-200 shadow-sm">
-              <CardContent className="p-8">
-                <p className="text-gray-700 mb-6">
-                  Special Olympics New York athletes must be at least 8 years old and identified by an agency or
-                  professional as having one of the following:
-                </p>
-                <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
-                  <li>Intellectual disabilities</li>
-                  <li>Cognitive delays as measured by formal assessment</li>
-                  <li>
-                    Significant learning or vocational problems due to cognitive delay that require or required
-                    specially designed instruction
-                  </li>
-                </ul>
-                <p className="text-gray-700 mb-4">
-                  Parallel to this core sports program, we support three seasons of{" "}
-                  <Link href="/unified-champion-schools" className="text-primary hover:underline">
-                    Unified Sports
-                  </Link>
-                  , where teams are comprised of athletes both with and without intellectual disabilities.
-                </p>
-                <p className="text-gray-700 mb-4">
-                  We also offer a Young Athletes Program that introduces the concept of inclusive sports to children up
-                  to age 7, preparing them for our core sports program with activities important to mental and physical
-                  development such as running, balance, and throwing/catching. Young Athletes is open to children of all
-                  abilities.
-                </p>
-                <p className="text-gray-700 mb-4">
-                  Finally, Special Olympics New York offers free health screenings in many disciplines at all major
-                  competitive events, and coordinates an Athlete Leadership program that includes public speaking
-                  training and mentorship opportunities.
-                </p>
-                <p className="text-lg font-bold text-primary">
-                  All Special Olympics New York programming is provided at no cost to athletes, families or caregivers.
-                </p>
-              </CardContent>
-            </Card>
+            <div className="bg-white border border-gray-200 rounded-xl shadow-sm p-8">
+              <p className="text-gray-700 mb-6">
+                Special Olympics New York athletes must be at least 8 years old and identified by an agency or
+                professional as having one of the following:
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
+                <li>Intellectual disabilities</li>
+                <li>Cognitive delays as measured by formal assessment</li>
+                <li>
+                  Significant learning or vocational problems due to cognitive delay that require or required
+                  specially designed instruction
+                </li>
+              </ul>
+              <p className="text-gray-700 mb-4">
+                Parallel to this core sports program, we support three seasons of{" "}
+                <Link href="/unified-champion-schools" className="text-primary hover:underline">
+                  Unified Sports
+                </Link>
+                , where teams are comprised of athletes both with and without intellectual disabilities.
+              </p>
+              <p className="text-gray-700 mb-4">
+                We also offer a Young Athletes Program that introduces the concept of inclusive sports to children up
+                to age 7, preparing them for our core sports program with activities important to mental and physical
+                development such as running, balance, and throwing/catching. Young Athletes is open to children of all
+                abilities.
+              </p>
+              <p className="text-gray-700 mb-4">
+                Finally, Special Olympics New York offers free health screenings in many disciplines at all major
+                competitive events, and coordinates an Athlete Leadership program that includes public speaking
+                training and mentorship opportunities.
+              </p>
+              <p className="text-lg font-bold text-primary">
+                All Special Olympics New York programming is provided at no cost to athletes, families or caregivers.
+              </p>
+            </div>
 
             <div className="text-center mt-8">
               <Link href="https://specialolympicsnynearyou.org/inquire-about-us/" target="_blank">

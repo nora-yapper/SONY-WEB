@@ -1,55 +1,63 @@
 import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
 import Link from "next/link"
 import Image from "next/image"
 
 export default function RegionsPage() {
   const regions = [
     {
-      name: "Capital",
+      name: "Capital District",
       slug: "capital-district",
       counties:
         "Albany, Columbia, Fulton, Greene, Hamilton, Montgomery, Rensselaer, Saratoga, Schenectady, Schoharie, Warren, Washington",
+      image: "/images/CapitalDistrictNY.png",
     },
     {
       name: "Central New York",
       slug: "central",
       counties: "Cayuga, Herkimer, Jefferson, Lewis, Madison, Oneida, Onondaga, Oswego",
+      image: "/images/CentralNY.png",
     },
     {
       name: "Genesee Region",
       slug: "genesee",
       counties: "Chemung, Genesee, Livingston, Monroe, Ontario, Schuyler, Seneca, Steuben, Wayne, Wyoming, Yates",
+      image: "/images/GeneseeNY.png",
     },
     {
       name: "Hudson Valley",
       slug: "hudson-valley",
       counties: "Dutchess, Orange, Putnam, Rockland, Sullivan, Ulster, Westchester",
+      image: "/images/HudsonValleyNY.png",
     },
     {
       name: "Long Island",
       slug: "long-island",
       counties: "Nassau, Suffolk",
+      image: "/images/LongIslandNY.png",
     },
     {
       name: "New York City",
       slug: "new-york-city",
       counties: "Bronx, Brooklyn, Manhattan, Queens, Staten Island",
+      image: "/images/NewYorkCityNY.png",
     },
     {
       name: "North Country",
       slug: "north-country",
       counties: "Clinton, Essex, Franklin, St. Lawrence",
+      image: "/images/NorthContryNY.png",
     },
     {
       name: "Southern Tier",
       slug: "southern-tier",
       counties: "Broome, Chenango, Cortland, Delaware, Otsego, Tioga, Tompkins",
+      image: "/images/SouthernTierNY.png",
     },
     {
       name: "Western New York",
       slug: "western",
       counties: "Allegany, Cattaraugus, Chautauqua, Erie, Niagara, Orleans",
+      image: "/images/WestNY.png",
     },
   ]
 
@@ -86,38 +94,38 @@ export default function RegionsPage() {
       </section>
 
       {/* Regions Grid */}
-      <section className="py-20 bg-gradient-to-b from-white to-gray-50">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Regions</h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
             {regions.map((region) => (
-              <Card key={region.slug} className="bg-white border-gray-200 shadow-sm hover:shadow-md transition-shadow h-full">
-                <CardContent className="p-8">
-                  <div className="aspect-video relative mb-6 rounded-lg overflow-hidden">
-                    <Image
-                      src={`/placeholder.svg?height=400&width=600&query=${region.name} New York region`}
-                      alt={region.name}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">{region.name}</h3>
-                  <p className="text-sm text-gray-600">{region.counties}</p>
-                </CardContent>
-              </Card>
+              <div key={region.slug} className="bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition-shadow h-full flex flex-col">
+                <div className="p-6 h-40">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3">{region.name}</h3>
+                  <p className="text-sm text-gray-600 line-clamp-3">{region.counties}</p>
+                </div>
+                <div className="aspect-[4/3] relative overflow-hidden bg-white mt-auto">
+                  <Image
+                    src={region.image}
+                    alt={region.name}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
       {/* Map Section */}
-      <section className="py-20 container mx-auto px-4">
+      <section className="py-20 bg-white container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <Card className="bg-white border-gray-200 shadow-sm">
-            <CardContent className="p-8">
+          <div className="bg-white border border-gray-200 rounded-xl shadow-sm">
+            <div className="p-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">New York State Regions Map</h2>
-              <div className="aspect-video relative rounded-lg overflow-hidden bg-gray-100">
+              <div className="aspect-video relative rounded-lg overflow-hidden bg-white">
                 <Image
                   src="/placeholder.svg?height=600&width=1000"
                   alt="New York State Regions Map"
@@ -125,8 +133,8 @@ export default function RegionsPage() {
                   className="object-cover"
                 />
               </div>
-            </CardContent>
-          </Card>
+            </div>
+          </div>
         </div>
       </section>
     </div>

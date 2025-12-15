@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -51,54 +50,46 @@ export default function DonatePage() {
       </section>
 
       {/* Impact Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Your Impact</h2>
 
             <div className="grid md:grid-cols-2 gap-8">
-              <Card className="bg-white border border-gray-200">
-                <CardContent className="p-8">
-                  <div className="text-5xl font-bold text-red-600 mb-4">48,000</div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Athletes Served</h3>
-                  <p className="text-gray-700">
-                    Your donation helps provide year-round sports training and competition to thousands of athletes
-                    across New York State.
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="bg-white border border-gray-200 rounded-xl shadow-sm p-8">
+                <div className="text-5xl font-bold text-red-600 mb-4">48,000</div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Athletes Served</h3>
+                <p className="text-gray-700">
+                  Your donation helps provide year-round sports training and competition to thousands of athletes
+                  across New York State.
+                </p>
+              </div>
 
-              <Card className="bg-white border border-gray-200">
-                <CardContent className="p-8">
-                  <div className="text-5xl font-bold text-red-600 mb-4">22</div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Olympic-Style Sports</h3>
-                  <p className="text-gray-700">
-                    Support enables us to offer a wide variety of sports programs throughout the year at no cost to
-                    athletes and families.
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="bg-white border border-gray-200 rounded-xl shadow-sm p-8">
+                <div className="text-5xl font-bold text-red-600 mb-4">22</div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Olympic-Style Sports</h3>
+                <p className="text-gray-700">
+                  Support enables us to offer a wide variety of sports programs throughout the year at no cost to
+                  athletes and families.
+                </p>
+              </div>
 
-              <Card className="bg-white border border-gray-200">
-                <CardContent className="p-8">
-                  <div className="text-5xl font-bold text-red-600 mb-4">21,000</div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Active Volunteers</h3>
-                  <p className="text-gray-700">
-                    Your contribution helps coordinate and support our dedicated volunteer network across nine regions.
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="bg-white border border-gray-200 rounded-xl shadow-sm p-8">
+                <div className="text-5xl font-bold text-red-600 mb-4">21,000</div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Active Volunteers</h3>
+                <p className="text-gray-700">
+                  Your contribution helps coordinate and support our dedicated volunteer network across nine regions.
+                </p>
+              </div>
 
-              <Card className="bg-white border border-gray-200">
-                <CardContent className="p-8">
-                  <div className="text-5xl font-bold text-red-600 mb-4">100%</div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Free to Athletes</h3>
-                  <p className="text-gray-700">
-                    All programming, including training, competition, uniforms, and travel, is provided at no cost to
-                    athletes and families.
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="bg-white border border-gray-200 rounded-xl shadow-sm p-8">
+                <div className="text-5xl font-bold text-red-600 mb-4">100%</div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Free to Athletes</h3>
+                <p className="text-gray-700">
+                  All programming, including training, competition, uniforms, and travel, is provided at no cost to
+                  athletes and families.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -110,54 +101,44 @@ export default function DonatePage() {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Ways to Give</h2>
 
           <div className="space-y-6">
-            <Card className="bg-white border border-gray-200">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-red-600 mb-4">One-Time Donation</h3>
-                <p className="text-gray-700 mb-4">
-                  Make a single gift to support Special Olympics New York athletes and programs.
-                </p>
-              </CardContent>
-            </Card>
+            <div className="bg-white border border-gray-200 rounded-xl shadow-sm p-8">
+              <h3 className="text-2xl font-bold text-red-600 mb-4">One-Time Donation</h3>
+              <p className="text-gray-700 mb-4">
+                Make a single gift to support Special Olympics New York athletes and programs.
+              </p>
+            </div>
 
-            <Card className="bg-white border border-gray-200">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-red-600 mb-4">Monthly Giving</h3>
-                <p className="text-gray-700 mb-4">
-                  Become a sustaining donor with automatic monthly contributions that provide ongoing support.
-                </p>
-              </CardContent>
-            </Card>
+            <div className="bg-white border border-gray-200 rounded-xl shadow-sm p-8">
+              <h3 className="text-2xl font-bold text-red-600 mb-4">Monthly Giving</h3>
+              <p className="text-gray-700 mb-4">
+                Become a sustaining donor with automatic monthly contributions that provide ongoing support.
+              </p>
+            </div>
 
-            <Card className="bg-white border border-gray-200">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-red-600 mb-4">Corporate Partnerships</h3>
-                <p className="text-gray-700 mb-4">
-                  Partner with us to engage your employees and make a lasting impact in your community.
-                </p>
-              </CardContent>
-            </Card>
+            <div className="bg-white border border-gray-200 rounded-xl shadow-sm p-8">
+              <h3 className="text-2xl font-bold text-red-600 mb-4">Corporate Partnerships</h3>
+              <p className="text-gray-700 mb-4">
+                Partner with us to engage your employees and make a lasting impact in your community.
+              </p>
+            </div>
 
-            <Card className="bg-white border border-gray-200">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-red-600 mb-4">Planned Giving</h3>
-                <p className="text-gray-700 mb-4">Leave a lasting legacy through estate planning and planned gifts.</p>
-              </CardContent>
-            </Card>
+            <div className="bg-white border border-gray-200 rounded-xl shadow-sm p-8">
+              <h3 className="text-2xl font-bold text-red-600 mb-4">Planned Giving</h3>
+              <p className="text-gray-700 mb-4">Leave a lasting legacy through estate planning and planned gifts.</p>
+            </div>
 
-            <Card className="bg-white border border-gray-200">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-red-600 mb-4">In-Kind Donations</h3>
-                <p className="text-gray-700 mb-4">
-                  Donate goods, services, or equipment to support our athletes and programs.
-                </p>
-              </CardContent>
-            </Card>
+            <div className="bg-white border border-gray-200 rounded-xl shadow-sm p-8">
+              <h3 className="text-2xl font-bold text-red-600 mb-4">In-Kind Donations</h3>
+              <p className="text-gray-700 mb-4">
+                Donate goods, services, or equipment to support our athletes and programs.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Ready to Make an Impact?</h2>

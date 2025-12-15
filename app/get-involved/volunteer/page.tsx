@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import Link from "next/link"
 import Image from "next/image"
@@ -50,11 +49,11 @@ export default function VolunteerPage() {
       </section>
 
       {/* Testimonial */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <Card className="bg-white border border-gray-200">
-              <CardContent className="p-8 md:p-12">
+            <div className="bg-white border border-gray-200 rounded-xl">
+              <div className="p-8 md:p-12">
                 <blockquote className="text-lg text-gray-700 italic leading-relaxed mb-6">
                   "I started as a day-of volunteer, unaware of just how much Special Olympics would inspire me and
                   change my life for the better. Volunteers across the state come back year after year because working
@@ -63,8 +62,8 @@ export default function VolunteerPage() {
                   do it sooner!"
                 </blockquote>
                 <p className="text-gray-900 font-bold">- Jill Warner</p>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -211,7 +210,7 @@ export default function VolunteerPage() {
       </section>
 
       {/* Register CTA */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Register to Volunteer</h2>

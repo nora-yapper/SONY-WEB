@@ -1,4 +1,3 @@
-import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import Image from "next/image"
@@ -31,7 +30,7 @@ export default function StaffBoardPage() {
               throughout the state, none would be possible without the guidance of our board and the dedication of our
               staff.
             </p>
-            <p className="text-lg text-gray-300 leading-relaxed">
+            <p className="text-lg text-gray-700 leading-relaxed">
               Our experienced executive leaders help make Special Olympics New York one of the most trusted, successful
               and sustainable nonprofit organizations in the country.
             </p>
@@ -40,15 +39,15 @@ export default function StaffBoardPage() {
       </section>
 
       {/* Leadership Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Leadership</h2>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <Card className="bg-white border border-gray-200">
-                <CardContent className="p-8 text-center">
-                  <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden bg-gray-800">
+              <div className="bg-white border border-gray-200 rounded-xl">
+                <div className="p-8 text-center">
+                  <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden bg-gray-100">
                     <Image
                       src="/placeholder.svg?height=200&width=200"
                       alt="Stacey Hengsterman"
@@ -59,12 +58,12 @@ export default function StaffBoardPage() {
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Stacey Hengsterman</h3>
                   <p className="text-primary">President & CEO</p>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
 
-              <Card className="bg-white border border-gray-200">
-                <CardContent className="p-8 text-center">
-                  <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden bg-gray-800">
+              <div className="bg-white border border-gray-200 rounded-xl">
+                <div className="p-8 text-center">
+                  <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden bg-gray-100">
                     <Image
                       src="/placeholder.svg?height=200&width=200"
                       alt="Casey Vattimo"
@@ -74,14 +73,14 @@ export default function StaffBoardPage() {
                     />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Casey Vattimo</h3>
-                  <p className="text-gray-400 mb-2">Senior Vice President</p>
+                  <p className="text-gray-600 mb-2">Senior Vice President</p>
                   <p className="text-sm text-gray-500">External Relations</p>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
 
-              <Card className="bg-white border border-gray-200">
-                <CardContent className="p-8 text-center">
-                  <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden bg-gray-800">
+              <div className="bg-white border border-gray-200 rounded-xl">
+                <div className="p-8 text-center">
+                  <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden bg-gray-100">
                     <Image
                       src="/placeholder.svg?height=200&width=200"
                       alt="Steve Fuller"
@@ -91,14 +90,14 @@ export default function StaffBoardPage() {
                     />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Steve Fuller</h3>
-                  <p className="text-gray-400 mb-2">Vice President</p>
+                  <p className="text-gray-600 mb-2">Vice President</p>
                   <p className="text-sm text-gray-500">Program & Competition</p>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
 
-              <Card className="bg-white border border-gray-200">
-                <CardContent className="p-8 text-center">
-                  <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden bg-gray-800">
+              <div className="bg-white border border-gray-200 rounded-xl">
+                <div className="p-8 text-center">
+                  <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden bg-gray-100">
                     <Image
                       src="/placeholder.svg?height=200&width=200"
                       alt="Ray Polikoski"
@@ -108,14 +107,14 @@ export default function StaffBoardPage() {
                     />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Ray Polikoski</h3>
-                  <p className="text-gray-400 mb-2">Vice President</p>
+                  <p className="text-gray-600 mb-2">Vice President</p>
                   <p className="text-sm text-gray-500">Finance & Administration</p>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
 
-              <Card className="bg-white border border-gray-200">
-                <CardContent className="p-8 text-center">
-                  <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden bg-gray-800">
+              <div className="bg-white border border-gray-200 rounded-xl">
+                <div className="p-8 text-center">
+                  <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden bg-gray-100">
                     <Image
                       src="/placeholder.svg?height=200&width=200"
                       alt="Renee Snyder"
@@ -125,14 +124,14 @@ export default function StaffBoardPage() {
                     />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Renee Snyder</h3>
-                  <p className="text-gray-400 mb-2">Vice President</p>
+                  <p className="text-gray-600 mb-2">Vice President</p>
                   <p className="text-sm text-gray-500">Development</p>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
 
-              <Card className="bg-white border border-gray-200">
-                <CardContent className="p-8 text-center">
-                  <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden bg-gray-800">
+              <div className="bg-white border border-gray-200 rounded-xl">
+                <div className="p-8 text-center">
+                  <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden bg-gray-100">
                     <Image
                       src="/placeholder.svg?height=200&width=200"
                       alt="Diane Colonna"
@@ -142,14 +141,14 @@ export default function StaffBoardPage() {
                     />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Diane Colonna</h3>
-                  <p className="text-gray-400 mb-2">Vice President</p>
+                  <p className="text-gray-600 mb-2">Vice President</p>
                   <p className="text-sm text-gray-500">Downstate Operations</p>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
 
-              <Card className="bg-white border border-gray-200">
-                <CardContent className="p-8 text-center">
-                  <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden bg-gray-800">
+              <div className="bg-white border border-gray-200 rounded-xl">
+                <div className="p-8 text-center">
+                  <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden bg-gray-100">
                     <Image
                       src="/placeholder.svg?height=200&width=200"
                       alt="Nathan Johnson"
@@ -159,10 +158,10 @@ export default function StaffBoardPage() {
                     />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Nathan Johnson</h3>
-                  <p className="text-gray-400 mb-2">Executive Director</p>
+                  <p className="text-gray-600 mb-2">Executive Director</p>
                   <p className="text-sm text-gray-500">Unified Sports</p>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -197,12 +196,12 @@ export default function StaffBoardPage() {
               { name: "Gary Pierre", title: "" },
               { name: "Ron Ward", title: "Athlete & Statewide ALC Chair" },
             ].map((member, index) => (
-              <Card key={index} className="bg-white border border-gray-200">
-                <CardContent className="p-6 text-center">
+              <div key={index} className="bg-white border border-gray-200 rounded-xl">
+                <div className="p-6 text-center">
                   <h3 className="text-lg font-bold text-gray-900 mb-2">{member.name}</h3>
                   {member.title && <p className="text-primary text-sm">{member.title}</p>}
-                </CardContent>
-              </Card>
+                </div>
+              </div>
             ))}
           </div>
         </div>

@@ -45,14 +45,14 @@ export function NewsEventsSnapshotSection() {
               </p>
             </div>
             <div className="flex-shrink-0">
-              <div className="relative w-64 h-64 md:w-80 md:h-80">
-                <Image
-                  src="/placeholder.svg?height=400&width=400"
-                  alt="Splash for Inclusion Image"
-                  fill
-                  className="object-contain"
-                />
-              </div>
+                <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-3xl overflow-hidden">
+                  <Image
+                    src="/images/splash-for-inclusion.jpeg"
+                    alt="Splash for Inclusion Image"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
             </div>
           </div>
         </div>
