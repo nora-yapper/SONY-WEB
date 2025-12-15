@@ -58,7 +58,7 @@ export function ProgramsServicesSection() {
                   program.title === "Law Enforcement Torch Run" ? "px-20" : ""
                 }`}
               >
-                <Card className="overflow-hidden !bg-gray-100 hover:!bg-gray-200 transition-all cursor-pointer h-full border-none rounded-lg pt-0">
+                <Card className="overflow-hidden !bg-gray-100 hover:!bg-gray-200 hover:scale-105 transition-all cursor-pointer h-full border-none rounded-lg pt-0">
                   <div
                     className={`relative overflow-hidden rounded-t-lg ${
                       program.title === "Law Enforcement Torch Run"

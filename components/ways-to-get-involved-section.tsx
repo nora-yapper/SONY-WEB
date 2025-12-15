@@ -34,7 +34,7 @@ export function WaysToGetInvolvedSection() {
   ];
 
   return (
-    <section className="relative py-24 bg-gray-50 px-20">
+    <section className="relative py-24 bg-gray-50 px-30">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold text-black mb-12 uppercase tracking-tight">
           Ways to Get Involved
@@ -43,8 +43,8 @@ export function WaysToGetInvolvedSection() {
           {ways.map((way) => {
             return (
               <Link key={way.title} href={way.href}>
-                <Card className="overflow-hidden !bg-gray-100 hover:!bg-gray-200 transition-all cursor-pointer h-full border-none rounded-lg pt-0">
-                  <div className="aspect-[5/3] relative overflow-hidden rounded-t-lg">
+                <Card className="overflow-hidden !bg-gray-100 hover:!bg-gray-200 hover:scale-105 transition-all cursor-pointer h-full border-none rounded-lg pt-0">
+                  <div className="h-[300px] relative overflow-hidden rounded-t-lg">
                     <Image
                       src={way.image}
                       alt={way.title}
