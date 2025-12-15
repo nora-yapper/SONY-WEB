@@ -40,7 +40,7 @@ export function AboutWhoWeAreSection() {
             <div className="flex-1">
               <div className="relative w-full h-[400px] lg:h-[500px]">
                 <Image
-                  src="/placeholder.svg?height=500&width=700"
+                  src="/images/home-page/who-we-are.png"
                   alt="Special Olympics volunteers and athletes in orange jackets"
                   fill
                   className="object-cover rounded-lg"

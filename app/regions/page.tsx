@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
-import Image from "next/image"
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function RegionsPage() {
   const regions = [
@@ -14,19 +14,22 @@ export default function RegionsPage() {
     {
       name: "Central New York",
       slug: "central",
-      counties: "Cayuga, Herkimer, Jefferson, Lewis, Madison, Oneida, Onondaga, Oswego",
+      counties:
+        "Cayuga, Herkimer, Jefferson, Lewis, Madison, Oneida, Onondaga, Oswego",
       image: "/images/CentralNY.png",
     },
     {
       name: "Genesee Region",
       slug: "genesee",
-      counties: "Chemung, Genesee, Livingston, Monroe, Ontario, Schuyler, Seneca, Steuben, Wayne, Wyoming, Yates",
+      counties:
+        "Chemung, Genesee, Livingston, Monroe, Ontario, Schuyler, Seneca, Steuben, Wayne, Wyoming, Yates",
       image: "/images/GeneseeNY.png",
     },
     {
       name: "Hudson Valley",
       slug: "hudson-valley",
-      counties: "Dutchess, Orange, Putnam, Rockland, Sullivan, Ulster, Westchester",
+      counties:
+        "Dutchess, Orange, Putnam, Rockland, Sullivan, Ulster, Westchester",
       image: "/images/HudsonValleyNY.png",
     },
     {
@@ -59,35 +62,31 @@ export default function RegionsPage() {
       counties: "Allegany, Cattaraugus, Chautauqua, Erie, Niagara, Orleans",
       image: "/images/WestNY.png",
     },
-  ]
+  ];
 
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[20vh] flex items-center justify-center overflow-hidden mt-20">
         <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-white/40 to-white/20 z-10" />
-        <Image
-          src="/placeholder.svg?height=800&width=1600"
-          alt="Find Your Region"
-          fill
-          className="object-cover"
-          priority
-        />
         <div className="relative z-20 container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 text-balance">Find Your Region</h1>
+          <h1 className="text-5xl md:text-7xl font-bold text-red-600 mb-6 text-balance font-[family-name:var(--font-changa)] ">
+            Find Your Region
+          </h1>
         </div>
       </section>
 
       {/* Main Content */}
-      <section className="py-20 container mx-auto px-4">
+      <section className=" container mx-auto px-4">
         <div className="max-w-4xl mx-auto space-y-8 text-center">
           <div className="prose prose-lg max-w-none">
             <p className="text-xl text-gray-700 leading-relaxed">
-              From our headquarters in Albany, Special Olympics New York coordinates events throughout nine regions of
-              the state.
+              From our headquarters in Albany, Special Olympics New York
+              coordinates events throughout nine regions of the state.
             </p>
             <p className="text-xl text-gray-700 leading-relaxed">
-              Find your region below for contact information to become an athlete, coach, volunteer or become a sponsor.
+              Find your region below for contact information to become an
+              athlete, coach, volunteer or become a sponsor.
             </p>
           </div>
         </div>
@@ -96,14 +95,23 @@ export default function RegionsPage() {
       {/* Regions Grid */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Regions</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
+            Regions
+          </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
             {regions.map((region) => (
-              <div key={region.slug} className="bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition-shadow h-full flex flex-col">
+              <div
+                key={region.slug}
+                className="bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md hover:scale-105 transition-all h-full flex flex-col"
+              >
                 <div className="p-6 h-40">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3">{region.name}</h3>
-                  <p className="text-sm text-gray-600 line-clamp-3">{region.counties}</p>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                    {region.name}
+                  </h3>
+                  <p className="text-sm text-gray-600 line-clamp-3">
+                    {region.counties}
+                  </p>
                 </div>
                 <div className="aspect-[4/3] relative overflow-hidden bg-white mt-auto">
                   <Image
@@ -119,7 +127,7 @@ export default function RegionsPage() {
         </div>
       </section>
 
-      {/* Map Section */}
+      {/* Map Section
       <section className="py-20 bg-white container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="bg-white border border-gray-200 rounded-xl shadow-sm">
@@ -136,7 +144,7 @@ export default function RegionsPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
-  )
+  );
 }

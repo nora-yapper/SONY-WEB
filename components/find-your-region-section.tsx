@@ -109,7 +109,7 @@ export function FindYourRegionSection() {
                 )}
                 <div className="absolute inset-0 bg-white opacity-40"></div>
                 <div className="relative z-10">
-                  <h3 className="text-2xl font-bold mb-4 group-hover:text-red-600 transition-colors">
+                  <h3 className="text-2xl font-bold mb-4 transition-colors">
                     {region.name}
                   </h3>
                   <p className="text-sm mb-6 opacity-90">{region.counties}</p>
