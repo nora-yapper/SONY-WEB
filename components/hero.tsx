@@ -8,7 +8,7 @@ export function Hero() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center justify-center pt-4 pb-20 sm:pt-6 sm:pb-32">
 
-          <div className="w-full">
+          <div className="w-full max-w-4xl mx-auto">
             <Image
               src="/images/landing-visual.png"
               alt="Discover and Unleash the Champion Within"
@@ -26,31 +26,20 @@ export function Hero() {
             authentic sports.
           </p>
 
-          <div className="mt-12 w-full max-w-5xl">
-            <div className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl border-4 border-white/10">
-              <Image
-                src="/placeholder.svg?height=800&width=1400"
-                alt="Special Olympics athletes celebrating"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div>
-
           <div className="mt-12 flex flex-col sm:flex-row gap-4">
             <Button
               asChild
-              className="rounded-full bg-primary px-10 py-7 text-lg font-semibold text-white hover:bg-primary/90 hover:shadow-lg hover:scale-[1.02] transition-all"
+              className="rounded-full bg-primary px-12 py-8 text-xl font-semibold text-white font-[family-name:var(--font-changa)] hover:bg-primary/90 hover:shadow-lg hover:scale-[1.02] transition-all"
             >
               <Link href="/competition/become-an-athlete">
-                Become an Athlete
+                BECOME AN ATHLETE
               </Link>
             </Button>
             <Button
               asChild
-              className="rounded-full border-2 border-gray-300 px-10 py-7 text-lg font-semibold text-black bg-white hover:!bg-white hover:scale-[1.02] hover:shadow-lg transition-all"
+              className="rounded-full border-2 border-gray-300 px-12 py-8 text-xl font-semibold text-black bg-white font-[family-name:var(--font-changa)] hover:!bg-white hover:scale-[1.02] hover:shadow-lg transition-all"
             >
-              <Link href="/get-involved">Get Involved</Link>
+              <Link href="/get-involved">GET INVOLVED</Link>
             </Button>
           </div>
         </div>
