@@ -43,9 +43,9 @@ export function ProgramsServicesSection() {
   ];
 
   return (
-    <section className="relative py-16 bg-white px-40">
+    <section className="relative py-16 bg-white px-4 sm:px-8 md:px-16 lg:px-40">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold text-black mb-8 uppercase tracking-tight">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-8 uppercase tracking-tight">
           Programs and Services
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
