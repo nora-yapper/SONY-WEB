@@ -12,7 +12,7 @@ export function NewsEventsSnapshotSection() {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(239,68,68,0.2),transparent_50%)]" />
           </div>
 
-          <div className="relative z-10 flex flex-col lg:flex-row items-center gap-8">
+          <div className="relative z-10 flex flex-col lg:flex-row items-center gap-8 mx-16">
             <div className="flex-1 text-center lg:text-left">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-100 border border-red-200 mb-4">
                 <Droplet className="h-4 w-4 text-red-500" />
@@ -25,8 +25,8 @@ export function NewsEventsSnapshotSection() {
               </h2>
               <p className="text-gray-700 text-lg mb-6 text-pretty leading-relaxed">
                 Every year, amazing people come together to empower Special
-                Olympics athletes. Join the movement — make a splash for a great
-                cause!
+                Olympics athletes. <br /> the movement — make a splash for a
+                great cause!
               </p>
               <Button
                 asChild
@@ -41,18 +41,25 @@ export function NewsEventsSnapshotSection() {
                 </a>
               </Button>
               <p className="text-xs text-gray-500 mt-4">
-                See <a href="https://specialolympics.org/sweepstakes-rules" className="text-red-500 underline">specialolympics.org/sweepstakes-rules</a> for details.
+                See{" "}
+                <a
+                  href="https://specialolympics.org/sweepstakes-rules"
+                  className="text-red-500 underline"
+                >
+                  specialolympics.org/sweepstakes-rules
+                </a>{" "}
+                for details.
               </p>
             </div>
             <div className="flex-shrink-0">
-                <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-3xl overflow-hidden">
-                  <Image
-                    src="/images/splash-for-inclusion.jpeg"
-                    alt="Splash for Inclusion Image"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
+              <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-3xl overflow-hidden">
+                <Image
+                  src="/images/splash-for-inclusion.jpeg"
+                  alt="Splash for Inclusion Image"
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>
